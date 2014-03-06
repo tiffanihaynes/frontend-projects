@@ -11,22 +11,41 @@
 }
 
 
-.header {}
+.header {
+overflow:auto;
+display: block;
+
+  }
 /* hint! you have to contain the floated children elements. */
 
 .logo {
+
+	float: left;
 	/* hint! */
 }
 
 .navigation {
+	float: right;
+
+
 	/* hint! */
 }
 
 .sidebar {
+	float:left;
+	width: 250px;
+	height: 300px;
+	
 }
 
 .main_content {
+	float:left;
+	width:734px;
+	height:300px;
+
 }
 
 .footer {
+	clear: both; /* to clear the floated elements above it. try removing me and see what happens. it might be more obvious if you add some margin to all the elements. */
+
 }

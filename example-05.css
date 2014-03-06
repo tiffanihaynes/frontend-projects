@@ -18,16 +18,45 @@
 
 .navigation {}
 
-.sidebar {}
+.sidebar {
+	float:left;
+	width: 250px;
 
-.main_content {}
+}
+
+.main_content {
+	display:block;
+	float:left;
+	width:734px;
+}
+.main_content:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+
+}
 /* hint! you have to contain the floated children elements. */
 
 .sub_content {
-	/* hint! */
-}
-.sub_content_2 {
+	float:right;
 	/* hint! */
 }
 
-.footer {}
+.sub_content_2 {
+	float:right;
+
+.sub_content_2:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+
+
+.footer {
+	display:block;
+	clear:both;
+
+}
